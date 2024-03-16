@@ -21,7 +21,7 @@ func NewAdapter(c client.Client) *Adapter {
 func (a *Adapter) StartWorkflow(workflowID string, workflowType string, params interface{}) error {
 	options := client.StartWorkflowOptions{
 		ID:        workflowID,
-		TaskQueue: "YOUR_TASK_QUEUE",
+		TaskQueue: "XXX_TASK_QUEUE",
 	}
 	_, err := a.client.ExecuteWorkflow(context.Background(), options, workflowType, params)
 	return err

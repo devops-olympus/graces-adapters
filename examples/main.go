@@ -1,7 +1,7 @@
 package main
 
 import (
-	gracesAdapters "172.17.162.204/devops-olympus/graces-adapters/sdk/temporal"
+	gracesAdapters "github.com/devops-olympus/graces-adapters/sdk/temporal"
 	"go.temporal.io/sdk/client"
 	"log"
 )
